@@ -1,1 +1,38 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Carpus Friendly Password Generator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="cfpg.js"></script>
+</head>
+<body onload="CFPG.load();">
+	<div id="main">
+		<h1>Easily-Typed Password Generator</h1>
+		<div id="password"></div>
+		<table>
+			<tr>
+				<td>Password length:</td>
+				<td>
+					<div id="length-slider">
+						<img id="length-pointer" src="images/pointer.png" height="26" width="15" />
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td>Maximum typing effort:</td>
+				<td>
+					<div id="effort-slider">
+						<img id="effort-pointer" src="images/pointer.png" height="26" width="15" />
+						<img id="arrow" src="images/arrow-down.png" height="9" width="9" />
+					</div>
+				</td>
+			</tr>
+		</table>
+		<img id="button" src="images/button.png" height="25" width="169" onclick="CFPG.clk();" />
+		<p>CFPG uses a quantitative typing effort model to generate secure passwords that are<br />
+		   measurably easy-to-type (a.k.a. <a href="http://en.wikipedia.org/wiki/Carpus" target="_blank">carpus</a> friendly) on standard QWERTY keyboards.<br />
+		   <br /><a href="https://github.com/jnrbsn/cfpg#readme">Click here</a> to read more about it.</p>
+	</div>
+</body>
+</html>
